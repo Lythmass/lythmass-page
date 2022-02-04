@@ -27,16 +27,6 @@ h1 {
 }
 
 
-i {
-     width: 100%;
-     transition: 0.5s ease;
-}
-.skills i:hover {
-     color: black;
-}
-.skills h3 {
-     padding-top: 35px;
-}
 
 
 h1:hover {
@@ -91,6 +81,17 @@ hr {
      border-width: 10px;
      margin: 0 auto;
      z-index: 1;
+}
+
+i {
+     width: 100%;
+     transition: 0.5s ease;
+}
+.skills i:hover {
+     color: black;
+}
+.skills h3 {
+     padding-top: 35px;
 }
 
 /* Second HR */
@@ -269,7 +270,7 @@ footer p {
   *::-webkit-scrollbar-thumb {
     background-color: #000000;
     border-radius: 10px;
-    border: 0px solid #ffffff;
+    border: 0 solid #ffffff;
   }
 
 
