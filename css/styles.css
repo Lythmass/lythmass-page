@@ -1,12 +1,45 @@
+a {
+     text-decoration: none;
+     color: #E84545;
+}
+a:hover {
+     color: #E84545;
+}
+
 body {
      margin: 0;
      font-family: 'Montserrat', sans-serif;
 }
-img {
+
+header img {
      width: 100%;
      height: 100%;
      position: absolute;
      object-fit: cover;
+}
+
+h1 {
+     cursor: default;
+     display: inline-block;
+     transition: 0.125s ease;
+     padding-top: 35px;
+}
+
+
+i {
+     width: 100%;
+     transition: 0.5s ease;
+}
+.skills i:hover {
+     color: black;
+}
+.skills h3 {
+     padding-top: 35px;
+}
+
+
+h1:hover {
+     transform: translateY(-10px);
 }
 
 h2 {
@@ -19,6 +52,68 @@ h2 {
 
 }
 
+h3 {
+     cursor: default;
+     display: inline-block;
+     padding: 20px 0 0;
+}
+
+h4 {
+     display: inline-block;
+     padding: 10px 20px;
+     cursor: pointer;
+     position: relative;
+     transition: all 0.25s ease;
+}
+h4::before {
+     position: absolute;
+     color: black;
+     top: 0; left: 20px;
+     padding: 10px 0;
+     width: 0;
+     overflow: hidden;
+     transition: all 0.25s ease;
+}
+h4:hover::before {
+     width: 64%;
+}
+
+h4:hover {
+     transform: translateY(-5px);
+}
+
+form {
+     display: inline-block;
+}
+
+.fiverr:before {
+     content: "Fiverr";
+}
+
+.gmail:before {
+     content: "Gmail";
+}
+
+
+
+hr {
+     border-style: dotted none none;
+     border-color: black;
+     background-color: white;
+     width: 10%;
+     border-width: 10px;
+     margin: 0 auto;
+     z-index: 1;
+}
+
+.about p {
+     padding: 0 30% 35px;
+     line-height: 1.5;
+     font-size: 1.25rem;
+     font-family: 'Open Sans', sans-serif;
+     color: black;
+     margin: 0 auto;
+}
 
 header {
      position: relative;
@@ -29,17 +124,6 @@ header {
      transform-style: preserve-3d;
      z-index: -1;
 }
-
-section {
-     background-color: white;
-     display: flex;
-     justify-content: center;
-     padding: 50px 0 0;
-     z-index: 1;
-     height: 100vh;
-     color: #E84545;
-}
-
 
 .wrapper {
      height: 100vh;
@@ -73,3 +157,110 @@ section {
      width: 60%;
      height: 60%;
 }
+
+.about {
+     background-color: white;
+     text-align: center;
+     padding: 1px 0 0;
+     z-index: 1;
+     color: #E84545;
+}
+
+.skills {
+     background-color: white;
+     text-align: center;
+     z-index: 1;
+     color: #E84545;
+}
+
+.above {
+     border: 3px solid #E84545;
+     width: 30%;
+     background-color: #E84545;
+     opacity: 100%;
+     border-radius: 3px;
+     margin: 50px auto;
+}
+
+.skills-box {
+     padding: 0 25%;
+}
+
+.ps {
+     background-image: url("photoshop.png");
+     width: 115px; height: 115px;
+     background-size: 100%;
+     margin: 0 auto;
+     transition: all 0.5s ease;
+}
+.ps:hover {
+     background-image: url("photoshop-black.png");
+}
+
+.offer {
+     background-color: #E84545;
+     color: white;
+     text-align: center;
+
+}
+
+.offer p {
+     padding: 5px 30% 35px;
+     line-height: 1.5;
+     font-size: 1.25rem;
+     font-family: 'Open Sans', sans-serif;
+     color: white;
+     margin: 0 auto;
+}
+
+.contact {
+     background-color: white;
+     color: #E84545;
+     text-align: center;
+}
+
+.contact p {
+     color: black;
+     padding: 25px 30%;
+     line-height: 1.5;
+     font-size: 1.25rem;
+     font-family: 'Open Sans', sans-serif;
+     margin: 0 auto;
+}
+
+footer {
+     background-color: #E84545;
+     text-align: center;
+     color: white;
+     padding: 10px 0;
+}
+
+footer p {
+     line-height: 1.5;
+     font-size: 1.25rem;
+     font-family: 'Open Sans', sans-serif;
+     margin: 0 auto;
+     padding: 10px 30%;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #000000 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 10px;
+    border: 0px solid #ffffff;
+  }
