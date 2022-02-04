@@ -264,3 +264,21 @@ footer p {
     border-radius: 10px;
     border: 0px solid #ffffff;
   }
+
+  @media (max-width: 820px) {
+       .offer p{
+            padding: 5px 22% 35px;
+       }
+       .about p{
+            padding: 5px 22% 35px;
+       }
+       .above {
+            width: 40%;
+       }
+ }
+
+ @media (max-width: 560px) {
+      .logo {
+          width: 400px;
+      }
+}
