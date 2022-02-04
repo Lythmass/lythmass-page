@@ -1,3 +1,4 @@
+/* General Styling */
 a {
      text-decoration: none;
      color: #E84545;
@@ -82,20 +83,6 @@ h4:hover {
      transform: translateY(-5px);
 }
 
-form {
-     display: inline-block;
-}
-
-.fiverr:before {
-     content: "Fiverr";
-}
-
-.gmail:before {
-     content: "Gmail";
-}
-
-
-
 hr {
      border-style: dotted none none;
      border-color: black;
@@ -106,15 +93,17 @@ hr {
      z-index: 1;
 }
 
-.about p {
-     padding: 0 30% 35px;
-     line-height: 1.5;
-     font-size: 1.25rem;
-     font-family: 'Open Sans', sans-serif;
-     color: black;
-     margin: 0 auto;
+/* Second HR */
+.above {
+     border: 3px solid #E84545;
+     width: 30%;
+     background-color: #E84545;
+     opacity: 100%;
+     border-radius: 3px;
+     margin: 50px auto;
 }
 
+/* Header Styles */
 header {
      position: relative;
      display: flex;
@@ -132,6 +121,7 @@ header {
      perspective: 25px;
 }
 
+/* Parallax Effect */
 .red-background {
      transform: translateZ(-25px) scale(2.01);
 }
@@ -158,6 +148,16 @@ header {
      height: 60%;
 }
 
+/* Contents for 2 h4 headers in contact section */
+.fiverr:before {
+     content: "Fiverr";
+}
+
+.gmail:before {
+     content: "Gmail";
+}
+
+/* About Section */
 .about {
      background-color: white;
      text-align: center;
@@ -166,20 +166,21 @@ header {
      color: #E84545;
 }
 
+.about p {
+     padding: 0 30% 35px;
+     line-height: 1.5;
+     font-size: 1.25rem;
+     font-family: 'Open Sans', sans-serif;
+     color: black;
+     margin: 0 auto;
+}
+
+/* Skills Section */
 .skills {
      background-color: white;
      text-align: center;
      z-index: 1;
      color: #E84545;
-}
-
-.above {
-     border: 3px solid #E84545;
-     width: 30%;
-     background-color: #E84545;
-     opacity: 100%;
-     border-radius: 3px;
-     margin: 50px auto;
 }
 
 .skills-box {
@@ -197,11 +198,11 @@ header {
      background-image: url("photoshop-black.png");
 }
 
+/* Offer Section */
 .offer {
      background-color: #E84545;
      color: white;
      text-align: center;
-
 }
 
 .offer p {
@@ -213,6 +214,7 @@ header {
      margin: 0 auto;
 }
 
+/* Contact Section */
 .contact {
      background-color: white;
      color: #E84545;
@@ -228,6 +230,11 @@ header {
      margin: 0 auto;
 }
 
+form {
+     display: inline-block;
+}
+
+/* Footer Section */
 footer {
      background-color: #E84545;
      text-align: center;
@@ -265,6 +272,8 @@ footer p {
     border: 0px solid #ffffff;
   }
 
+
+/* Some Responsivness */
   @media (max-width: 820px) {
        .offer p{
             padding: 5px 22% 35px;
